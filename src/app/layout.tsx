@@ -1,5 +1,13 @@
 import { Metadata } from 'next';
 import './globals.css';
+import Header from '@/components/header/header';
+import { Ubuntu } from 'next/font/google';
+
+const ubuntu = Ubuntu({
+  variable: '--ubuntu-font',
+  weight: ['300', '400', '500'],
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: 'Key Smasher',
@@ -100,7 +108,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className={`${ubuntu.className} relative flex min-h-screen flex-col bg-white text-black dark:bg-slate-950 dark:text-white`}
+      >
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
