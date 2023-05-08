@@ -3,6 +3,7 @@ import './globals.css';
 import Header from '@/components/header/header';
 import { Ubuntu } from 'next/font/google';
 import ProviderComponent from '@/components/providerComponent';
+import Background from '@/components/background';
 
 const ubuntu = Ubuntu({
   variable: '--ubuntu-font',
@@ -106,10 +107,15 @@ export const metadata: Metadata = {
   creator: 'Vishal Kamath',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <ProviderComponent>
+        <Background />
         <body
           className={`${ubuntu.className} relative flex min-h-screen flex-col bg-white text-black dark:bg-slate-950 dark:text-white`}
         >
