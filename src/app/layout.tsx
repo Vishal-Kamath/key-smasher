@@ -4,6 +4,7 @@ import Header from '@/components/header/header';
 import { Ubuntu } from 'next/font/google';
 import ProviderComponent from '@/components/providerComponent';
 import Background from '@/components/background';
+import Footer from '@/components/footer/footer';
 
 const ubuntu = Ubuntu({
   variable: '--ubuntu-font',
@@ -121,6 +122,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Footer />
         </body>
       </ProviderComponent>
     </html>

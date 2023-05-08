@@ -11,6 +11,10 @@ module.exports = {
       fontFamily: {
         'ubuntu': ['var(--ubuntu-font)', 'sans-serif'],
       },
+      colors: {
+        'twitter': '#1DA1F2',
+        'linkedin': '#0072b1',
+      },
     },
   },
   plugins: [],
