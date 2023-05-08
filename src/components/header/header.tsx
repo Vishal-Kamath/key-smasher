@@ -23,7 +23,7 @@ const Header: React.FC = () => {
               className="h-10 w-10"
               loading="lazy"
             />
-            <span className="font-ubuntu text-2xl text-slate-800 dark:text-slate-300 font-medium max-sm:hidden">
+            <span className="font-ubuntu text-2xl text-slate-800 dark:text-slate-300 font-medium">
               Smasher_
             </span>
           </Link>
