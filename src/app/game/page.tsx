@@ -1,14 +1,14 @@
 import TypeTest from '@/components/typeTest/typeTest';
 import Image from 'next/image';
-import { sentence } from 'txtgen';
+import { paragraph } from 'txtgen';
 
-const getText = async () => {
-  const test = sentence();
+const getTest = async () => {
+  const test = paragraph(200);
   return test;
 };
 
 const GamePage = async () => {
-  const testText = await getText();
+  const testText = await getTest();
   return (
     <main className="relative flex min-h-screen flex-col items-end justify-center px-[5vw]">
       <Image
