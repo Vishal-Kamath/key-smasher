@@ -116,10 +116,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ProviderComponent>
-        <Background />
         <body
           className={`${ubuntu.className} relative flex min-h-screen flex-col bg-white text-black dark:bg-slate-950 dark:text-white`}
         >
+          <Background />
           <Header />
           {children}
           <Footer />
