@@ -1,4 +1,4 @@
-# Key Smasher - Typing Speed Test Website
+# Key Smasher - Typing Speed Test Website (Ongoing Project)
 
 Key Smasher is a typing speed test website designed to challenge and improve your typing skills. Whether you're a seasoned typist looking to refine your skills or a beginner looking to develop your typing proficiency, Key Smasher offers a fun and engaging platform for you to test and develop your typing speed and accuracy.
 
